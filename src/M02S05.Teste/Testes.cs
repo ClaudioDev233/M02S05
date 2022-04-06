@@ -27,32 +27,26 @@ namespace M02S05.Teste
             Assert.Equal(0, _fornecedor.ObterSaldo());
         }
 
-        //Implemente a classe Empregado com métodos seletores e modificadores e um método calcularSalario.
+       
         [Fact]
 
         public void CalculaSalarioLiquidoEmpregado()
         {
             var salarioEstimado = 900;
-            //salario = 1000
-            //imposto 10% = 0.1
+            
             Assert.Equal(salarioEstimado, _empregado.CalculaSalarioLiquido());
         }
         [Fact]
         public void CalculaSalarioLiquidoAdministrador()
         {
             var salarioEstimado = 1900;
-            //salario = 1000
-            //imposto 10% = 0.1
-            //1000
+            
             Assert.Equal(salarioEstimado, _adminstrador.CalculaSalarioLiquido());
         }
         [Fact]
         public void CalculaSalarioLiquidoOperario()
         {
-            //salario = 1000
-            // imposto = 0.1
-            // valor produzido = 1000
-            // comissao = 0.1
+           
             var salarioEstimado = 1000;
             Assert.Equal(salarioEstimado, _operario.CalculaSalarioLiquido());
         }
