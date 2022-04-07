@@ -6,20 +6,20 @@ using System.Threading.Tasks;
 
 namespace M02S05
 {
-    public class Cachorro : Animal, ICorrer
+    public class Preguica : Animal
     {
-        public Cachorro(string nome, int idade) : base(nome, idade)
+        public Preguica(string nome, int idade) : base(nome, idade)
         {
         }
 
-        public void Correr()
+        public void SubirEmArvore()
         {
-            Console.WriteLine("Cachorrin Correndo");
+            Console.WriteLine("Estou subindo na arvore");
         }
 
         public override void EmitirSom()
         {
-            Console.WriteLine("Au au au");
+            Console.WriteLine("Sonzinho da preguiça");
         }
     }
 }
